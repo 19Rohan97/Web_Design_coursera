@@ -15,13 +15,13 @@ header nav a {
 
 /* Main */
 
-main img{
+main img {
   display: none;
 }
-main section{
+main section {
   background-color: #6e6e6e;
 }
-main section h2{
+main section h2 {
   text-transform: uppercase;
   color: #0032c7;
 }
