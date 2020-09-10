@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --background-main: rgba(180, 180, 180, 0.5);
+  --bacground-secondary: #9e2222;
+  --primary-color: #037ffc;
+  --secondary-color: #000000;
+  --border-color: #000000;
+  --transition-main: 0.4s all ease-in;
+}
+
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--background-main);
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+h1,
+h2,
+a {
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Header */
+
+header {
+  min-height: 30vh;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--background-main);
+  background: url(../backgroung.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header h1 {
+  color: var(--primary-color);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+  font-size: 3rem;
+}
+header nav a {
+  padding: 1rem 5rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: var(--background-main);
+  color: var(--secondary-color);
+  font-weight: 500;
+  transition: var(--transition-main);
+
+  /* For the box shadow */
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+header nav a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Main */
+
+main {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 20vw 70vw;
+}
+main .left {
+  background-color: var(--bacground-secondary);
+}
+main .left img {
+  display: block;
+  max-width: 200px;
+  margin: 2rem auto;
+  border: 2px solid var(--border-color);
+  transition: var(--transition-main);
+}
+main .left img:hover {
+  transform: scale(1.1);
+}
+main .right {
+  padding: 2rem;
+}
+main .right h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 4px #037ffc;
+}
+main .right p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
