@@ -1,0 +1,27 @@
+/* Header */
+
+header {
+  background-color: #d3d3d3;
+}
+header h1 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+header nav a {
+  color: #000000;
+  background-color: #4169e1;
+}
+
+/* Main */
+
+main img{
+  display: none;
+}
+main section{
+  background-color: #6e6e6e;
+}
+main section h2{
+  text-transform: uppercase;
+  color: #0032c7;
+}
