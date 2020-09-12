@@ -105,13 +105,15 @@ main .right p {
 }
 
 /* Table Style */
-
+table {
+  font-family: "IBM Plex Serif", serif;
+  transition: 0.2s all ease-in;
+}
 th,
 tr,
 td {
   padding: 0.7rem 1.5rem;
   letter-spacing: 1px;
-  font-family: "IBM Plex Serif", serif;
   opacity: 0.8;
   transition: 0.2s all ease-in;
 }
